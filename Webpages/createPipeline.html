@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="assignment05.html"><em>Back to Assignment 05</em></a><br><br>
+<a href="index.html"><em>Back to homepage</em></a>
+
+<h1>Creating a Pipeline</h1>
+
+<h2><i>Searching an XML Google Bookshelf using a Pipeline</i></h2>
+
+<p><em>These instructions will show and describe how to create a pipeline based on
+<b>Feed Data</b> from <a href="xmlBookshelf.xml">Favorites Bookshelf XML
+</em></a></p>
+
+<p>This pipline will allow its user to search for any book on this bookshelf
+based on the author and title of the book.<P>
+
+<p>You will need a Yahoo account and be logged into it in order to create this 
+pipe. Instructions on how to create a <em>Yahoo</em> account can be found 
+<a href="http://www.wikihow.com/Set-up-a-Yahoo!-Mail-Account"><em>here</em>
+</a>.<p>
+
+<p><em>Go to <a href="http://pipes.yahoo.com/pipes/pipe.edit"><i>Yahoo Pipes</i>
+</a>. This is where you will be creating your pipeline.</em></p>
+
+<h2>STEP 1: Fetching the Pipeline Data</h2>
+
+<p>Here we are simply fetching the XML data fields from the Google Books XML.<p>
+
+
+<ul>
+	<li>Find <b>Sources</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Fetch Data</i> onto the blue canvas.</li>
+	<li>In the <i>URL</i> field, type in the address of the XML to be searched.
+		In this case it's:<br><b>http://personal.utulsa.edu/~air196/xmlBookshelf.xml</b></li>
+	<li>In the <i>Path to item list</i> space enter: <b>books.book</b></li>
+	<li>Find <b>Operators</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Filter</i> onto the blue canvas.</li>
+	<li>Change <i>Block</i> to <b>Permit</b></li>
+	<li>For the first rule fill in the first blank with <b>item.contributor
+		</b></li>
+	<li>Click the plus to the left of <i>Rules</i> to add a new rule</li>
+	<li>For the second rule fill in the first blank with <b>item.title</b></li>
+	<li>Click on the little dot underneath <i>Fetch Data</i> and drag the link
+		to the top of <i>Filter</i> to connect the two.</li>
+
+</ul>
+
+<h2>STEP 2: Making Pipeline Search Fields</h2>
+
+<p>Here were are creating search fields for the user so that they can look
+through our XML file for a book by Title or Author.<p>
+
+<ul>
+	<li>Find <b>User inputs</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Text Input</i> twice onto the blue canvas.
+		</li>
+
+	<li>Fill in the fields as follows for the first <i>Text Input</i>:
+	<ul>
+		<li><i>Name:</i> <b>Author</b>.</li>
+		<li><i>Prompt:</i> <b>Author</b>.</li>
+		<li><i>Position: </i><b>0</b>.</li>
+	</ul>
+	</li>
+
+	<li>Fill in the fields as follows for the second <i>Text Input</i>:
+	<ul>
+		<li><i>Name:</i> <b>Title</b>.</li>
+		<li><i>Prompt:</i> <b>Title</b>.</li>
+		<li><i>Position: </i><b>1</b>.</li>
+	</ul>
+	</li>
+
+	<li>Click on the little dot underneath <i>Text Input: Author</i> and 
+		drag the link to the right of the first rule in <i>Filter</i> 
+		to connect the two.</li>
+	<li>Click on the little dot underneath <i>Text Input: Title</i> and 
+		drag the link to the right of the second rule in <i>Filter</i> 
+		to connect the two.</li>
+
+</ul>
+
+<h2>STEP 3: Organizing the Search Results in Alphabetical Order by Author 
+(optional)</h2>
+
+<p>Here is how to do exactly what it says: organize the results the user recieves
+by using our pipe, in alphabetical order.<p>
+
+<ul>
+	<li>Find <b>Operators</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Sort</i> onto the blue canvas.</li>
+	<li>Fill in the first blank with <b>item.contributor</b>.</li>
+	<li>It should now read:<b>item.contributor in ascending order</b>.</li>
+	
+
+</ul>
+
+<p><em>Finally just make a link between <b>Filter</b> and <b>Sort</b>. And 
+create a link between <b>Sort</b> and <b>Pipe output</b>.</em></p>
+
+<h2>STEP 4: Publishing your Pipe</h2>
+
+<p>Here is how to make your pipe visible for others to see.<p>
+
+<ol>
+	<li>Click the <i>Save</i> button in the top right corner under the search
+		 bar</li>
+	<li>Choose a name for your pipe (i.e. <b>Favorites Bookshelf</b>)</li>
+	<li>Now click on <i>Properties</i> next to the <i>Save</i> button.</li>
+	<li>Type in  Description and whatever tags you would like the pipelien 
+		to have. Click <i>OK</i>.</li>
+	<li>Click on <i>Properties</i> again, but this time click on the little
+		blue link above <i>OK</i> that says <i>Run Pipe...</i>.</li>
+	<li>You are now at a new page. Above your pipe are four buttons. Click 
+		the one that says <i>Publish</i>.</li>
+	<li>Click <i>OK</i> on the dialogue box. It is now published!</li>
+
+</ol>
+
+<p>Now you can test the pipe by typing in various search terms as such:<p>
+
+<img src="search1.png" alt="search1" 
+		width="800" height="600"><br>
+
+<img src="search2.png" alt="search2" 
+		width="800" height="600"><br>
+
+<img src="search3.png" alt="search3" 
+		width="800" height="600"><br>
+
+</body>
+</html>

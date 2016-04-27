@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library>
+  <list_title>Favorites</list_title>
+  <blurb></blurb>
+  <url>http://books.google.com/books?uid=101574995460603398133&amp;as_coll=0</url>
+  <books>
+    <book>
+      <id>nXCxAAAAQBAJ</id>
+      <url>http://books.google.com/books?id=nXCxAAAAQBAJ</url>
+      <title>The Invention of Wings</title>
+      <contributor>Sue Monk Kidd</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1472212762</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>jZIUcMyLFzAC</id>
+      <url>http://books.google.com/books?id=jZIUcMyLFzAC</url>
+      <title>The Husband&apos;s Secret</title>
+      <contributor>Liane Moriarty</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1101636238</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>1f3WAQAAQBAJ</id>
+      <url>http://books.google.com/books?id=1f3WAQAAQBAJ</url>
+      <title>Missing You</title>
+      <contributor>Harlan Coben</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1409144623</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>BZ-NAQAAQBAJ</id>
+      <url>http://books.google.com/books?id=BZ-NAQAAQBAJ</url>
+      <title>Raising Steam</title>
+      <contributor>Terry Pratchett</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0385538294</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>dvuK7isszLIC</id>
+      <url>http://books.google.com/books?id=dvuK7isszLIC</url>
+      <title>The Goldfinch</title>
+      <contributor>Donna Tartt</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0316248673</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>ChXFAgAAQBAJ</id>
+      <url>http://books.google.com/books?id=ChXFAgAAQBAJ</url>
+      <title>Be Careful What You Wish For</title>
+      <contributor>Jeffrey Archer</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1250034485</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>9tpVp3nX5bcC</id>
+      <url>http://books.google.com/books?id=9tpVp3nX5bcC</url>
+      <title>The Bootlegger</title>
+      <contributor>Clive Cussler, Justin Scott</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0698140737</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>cZbQAgAAQBAJ</id>
+      <url>http://books.google.com/books?id=cZbQAgAAQBAJ</url>
+      <title>Words of Radiance</title>
+      <contributor>Brandon Sanderson</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0765326361</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>9YjwAAAAQBAJ</id>
+      <url>http://books.google.com/books?id=9YjwAAAAQBAJ</url>
+      <title>Night Broken</title>
+      <contributor>Patricia Briggs</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1101638834</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>8UOXnQEACAAJ</id>
+      <url>http://books.google.com/books?id=8UOXnQEACAAJ</url>
+      <title>Stone Cold</title>
+      <contributor>C. J. Box</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0399160760</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>D9TKSKS74MwC</id>
+      <url>http://books.google.com/books?id=D9TKSKS74MwC</url>
+      <title>Artemis Fowl</title>
+      <contributor>Eoin Colfer</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1423132173</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>0ovOTsTs22AC</id>
+      <url>http://books.google.com/books?id=0ovOTsTs22AC</url>
+      <title>Eragon</title>
+      <contributor>Christopher Paolini</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>044023848X</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>S_x14SSUj6wC</id>
+      <url>http://books.google.com/books?id=S_x14SSUj6wC</url>
+      <title>Crooked Little Vein</title>
+      <contributor>Warren Ellis</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0061740977</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>00YpiHD-30MC</id>
+      <url>http://books.google.com/books?id=00YpiHD-30MC</url>
+      <title>The Secret Life of Bees</title>
+      <contributor>Sue Monk Kidd</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1101010967</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>KW0YAAAAYAAJ</id>
+      <url>http://books.google.com/books?id=KW0YAAAAYAAJ</url>
+      <title>The Three Musketeers</title>
+      <contributor>Alexandre Dumas</contributor>
+      <labels />
+    </book>
+    <book>
+      <id>aSknnwEACAAJ</id>
+      <url>http://books.google.com/books?id=aSknnwEACAAJ</url>
+      <title>The Lord of the Rings</title>
+      <contributor>John Ronald Reuel Tolkien</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0007123817</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>E2Pk5mjf9A0C</id>
+      <url>http://books.google.com/books?id=E2Pk5mjf9A0C</url>
+      <title>Nineteen Eighty-Four</title>
+      <contributor>George Orwell</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0141919957</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>DKU1EsmnpMQC</id>
+      <url>http://books.google.com/books?id=DKU1EsmnpMQC</url>
+      <title>Lord of the Flies: New Educational Edition</title>
+      <contributor>William Golding</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0571290582</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>dhRungEACAAJ</id>
+      <url>http://books.google.com/books?id=dhRungEACAAJ</url>
+      <title>Harry Potter and the Deathly Hallows</title>
+      <contributor>J.K. Rowling</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1781100330</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>dNSOkGbW_EkC</id>
+      <url>http://books.google.com/books?id=dNSOkGbW_EkC</url>
+      <title>The Unofficial Harry Potter Cookbook: From Cauldron Cakes to Knickerbocker Glory--More Than 150 Magical Recipes for Muggles and Wizards</title>
+      <contributor>Dinah Buchotz</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1440508526</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>0HZrq-4zA5QC</id>
+      <url>http://books.google.com/books?id=0HZrq-4zA5QC</url>
+      <title>Crime and Punishment</title>
+      <contributor>Fyodor Dostoyevsky</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>1605205109</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>jVMEAAAAYAAJ</id>
+      <url>http://books.google.com/books?id=jVMEAAAAYAAJ</url>
+      <title>War and Peace</title>
+      <contributor>graf Leo Tolstoy, Nathan Haskell Dole</contributor>
+      <labels />
+    </book>
+    <book>
+      <id>4SiwAAAAQBAJ</id>
+      <url>http://books.google.com/books?id=4SiwAAAAQBAJ</url>
+      <title>The Future of the Mind: The Scientific Quest to Understand, Enhance, and Empower the Mind</title>
+      <contributor>Michio Kaku</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0385530838</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>cprkQgAACAAJ</id>
+      <url>http://books.google.com/books?id=cprkQgAACAAJ</url>
+      <title>Unbroken: A World War II Story of Survival, Resilience, and Redemption</title>
+      <contributor>Laura Hillenbrand</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0375435018</value>
+      </identifier>
+      <labels />
+    </book>
+    <book>
+      <id>OkxUrypdTa0C</id>
+      <url>http://books.google.com/books?id=OkxUrypdTa0C</url>
+      <title>David and Goliath: Underdogs, Misfits, and the Art of Battling Giants</title>
+      <contributor>Malcolm Gladwell</contributor>
+      <identifier>
+        <type>ISBN</type>
+        <value>0316204382</value>
+      </identifier>
+      <labels />
+    </book>
+  </books>
+  <add_token>ACfU3U0icL1fGivMkQitoLyauFlHiqj5Tg</add_token>
+  <remove_token>ACfU3U0xvtkaop8k5uJl9N0Mqsr0_dZabA</remove_token>
+  <ack_token>ACfU3U2KOT_HjNLZRv-odXNtP982dXGqPg</ack_token>
+</library>

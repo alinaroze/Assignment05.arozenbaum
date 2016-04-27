@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="assignment05.html"><em>Back to Assignment 05</em></a><br><br>
+<a href="index.html"><em>Back to homepage</em></a>
+
+<h1>Creating a Pipeline: 2</h1>
+
+<h2><i>Comparing an XML Google Bookshelf to Current NY Times Bestsellers</i></h2>
+
+<p><em>These instructions will show and describe how to create a pipeline based on
+<b>Feed Data</b> from <a href="xmlBookshelf.xml">Favorites Bookshelf XML
+</em></a></p>
+
+<p>This pipline will allow its user compare the chosen XML Google Bookshelf to 
+the current NY Times hard-cover cition Bestsellers list. It then outputs
+the list of those found on both with links to those books in Google Books.<P>
+
+<p>You will need a Yahoo account and be logged into it in order to create this 
+pipe. Instructions on how to create a <em>Yahoo</em> account can be found 
+<a href="http://www.wikihow.com/Set-up-a-Yahoo!-Mail-Account"><em>here</em>
+</a>.<p>
+
+<p>You will also need an API key for the hard-cover ficition bestsellers list
+ from the NY Times. Instruction on how to do that can be found <a href=
+"achieveAPI.xml"><em>here</em></a>.<p>
+
+<p>Here is an <a href="http://pipes.yahoo.com/pipes
+/pipe.info?_id=ec0ccf23dcb234f043f659b751815739"><i>example pipe</i></a> to reference.<p> 
+
+<p><em>Go to <a href="http://pipes.yahoo.com/pipes/pipe.edit"><i>Yahoo Pipes</i>
+</a>. This is where you will be creating your pipeline.</em></p>
+
+<h2>STEP 1: Fetching the Pipe Data</h2>
+
+<p>Here we are simply fetching the XML data fields from both the Google Books
+XML bookshelf and the NY Times list XML from the API.<p>
+
+<ol>
+
+	<li>Find <b>Sources</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Fetch Data</i> twice onto the blue canvas.
+		</li>
+
+	<li>Fill in the fields as follows for the first <i>Fetch Data</i>:
+	<ul>
+		<li>In the <i>URL</i> field, type in the address of the XML 
+			to be searched.
+		In this case it's:<br><b>http://personal.utulsa.edu/~air196/
+		xmlBookshelf.xml</b>.</li>
+		<li>In the <i>Path to item list</i> space enter: 
+			<b>books.book</b></li>
+	</ul>
+	</li>
+
+	<li>Fill in the fields as follows for the second <i>Fetch Data</i>:
+	<ul>
+		<li>In the <i>URL</i> field, simply copy and paste the URL you
+			created in the <a href="achieveAPI.xml"><em>Retieving the 
+			NY Times API Tutorial</em></a>.</li>
+		<li>In the <i>Path to item list</i> space enter: 
+			<b>results.book</b> </li>
+	</ul>
+	</li>
+
+</ol>
+
+<h2>STEP 2: Formatting the Pipe Data</h2>
+
+<p>Here we are simply formatting the coressponding data from both data sets 
+so that it can actually be compared.<p>
+
+<ol>
+
+	<li>Find <b>Operators</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Regex</i> onto the blue canvas.</li>
+
+	<li>Fill in the fields as follows for <i>Regex</i> (this will make the
+		titles of all the books from the XML Bookshelf in all CAPS):
+	<ul>
+		<li><i>In:</i> <b>item.title</b>.</li>
+		<li><i>replace:</i> <b>(.*)</b>.</li>
+		<li><i>with: </i><b>\U$1</b>.</li>
+
+	</ul>
+	</li>
+
+	<li>Find <b>Operators</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Rename</i> twice onto the blue canvas.</li>
+
+	<li>Click the + to the right of <i>Mappings</i> to add a second line
+		to the first and second <i>Rename</i></li>
+	<li>Fill in the fields as follows for the first line of the first 
+		rename <i>Rename</i>:
+	<ul>
+		<li>In the first blank type in: <b>item.title</b>.</li>
+		<li>In the second blank leave it as<b>Rename</b>.</li>
+		<li>In the thrid blank type in: <b>Title</b>.</li>
+
+	</ul>
+	</li>
+
+	<li>Fill in the fields as follows for the second line of the first 
+		rename <i>Rename</i>:
+	<ul>
+
+		<li>In the first blank type in: <b>item.contributor</b>.</li>
+		<li>In the second blank leave it as<b>Rename</b>.</li>
+		<li>In the thrid blank type in: <b>Author</b>.</li>
+	
+	</ul>
+	</li>
+
+	<li>Fill in the fields as follows for the first line of the second 
+		rename <i>Rename</i>:
+	<ul>
+		<li>In the first blank type in: <b>item.book_details.
+			book_detail.title</b>.</li>
+		<li>In the second blank leave it as<b>Rename</b>.</li>
+		<li>In the thrid blank type in: <b>Title</b>.</li>
+
+	</ul>
+	</li>
+
+	<li>Fill in the fields as follows for the second line of the second 
+		rename <i>Rename</i>:
+	
+	<ul>
+
+		<li>In the first blank type in: <b>item.book_details.
+			book_detail.author</b>.</li>
+		<li>In the second blank leave it as<b>Rename</b>.</li>
+		<li>In the thrid blank type in: <b>Author</b>.</li>
+
+	</ul>
+	</li>
+
+
+</ol>
+
+<h2>STEP 3: Comparing the Pipe Data</h2>
+
+<p>Here the pipe is comparing the list of book (by title) between the Google 
+Bookshelf and the NY Times list and spitting out a list of books that are
+found on both.<p> 
+
+<ol>
+
+	<li>Find <b>Operators</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop the following onto the blue canvas:
+ 
+	<ul>
+
+		<li><i>Union</i></li>
+		<li><i>Unique</i></li>
+		<li><i>Filter</i></li>
+
+	</ul>
+	</li>
+
+	<li>In the blank space in <i>Union</i> type in <b>item.Title</b>.</li>
+	<li>In filter fill in the banks so the first line reads the following:
+		<ul>
+			<li><b>Permit</b> items that match <b>all</b> 
+				of the following</li>
+		</ul>
+	</li>
+
+	<li>Then in the second line proceed to fill in the blanks so that it 
+		reads the following:
+		<ul>
+			<li><b>item.y:repeatcount is greater than 1</b></li>
+		</ul>
+	</li>
+
+</ol>
+
+<h2>STEP 4: Organizing Pipe Data For Output</h2>
+
+<p>Here we are formatting the data so that it can actually output and are
+eliminating and unecessary fields/items from the data; converting it back to
+how the XML from Google Books was displayed.<p>
+
+<ol>
+	<li>Find <b>Operators</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop the following onto the blue canvas:
+	
+	<ul>
+
+		<li><i>Rename</i></li>
+		<li><i>Loop</i></li>
+
+	</ul>
+	</li>
+	
+	<li>Click the + to the right of <i>Mappings</i> to add a second line
+		to the, now third, <i>Rename</i></li>
+
+	<li>Fill in the fields as follows for the first line of the third 
+		rename <i>Rename</i>:
+	<ul>
+		<li>In the first blank type in: <b>item.Title</b>.</li>
+		<li>In the second blank leave it as<b>Rename</b>.</li>
+		<li>In the thrid blank type in: <b>title</b>.</li>
+
+	</ul>
+	</li>
+
+	<li>Fill in the fields as follows for the second line of the third 
+		rename <i>Rename</i>:
+	<ul>
+
+		<li>In the first blank type in: <b>item.Author</b>.</li>
+		<li>In the second blank leave it as<b>Rename</b>.</li>
+		<li>In the thrid blank type in: <b>contributor</b>.</li>
+	
+	</ul>
+	</li>
+
+	<li>Find <b>Sources</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Item Builder</i> into the module space
+		in <i>Loop</i>.</li>
+	<li>Click the + to the right of <i>Attributes</i> five more times.</li>
+	<li>Now fill out the six lines as such:
+
+	<ul>
+
+		<li><b>id</b> = <b>item.id</b>.</li>
+		<li><b>url</b> = <b>item.url</b>.</li>
+		<li><b>title</b> = <b>item.title</b>.</li>
+		<li><b>contributor</b> = <b>item.contributor</b>.</li>
+		<li><b>identifier.type</b> = <b>item.identifier.type</b>.</li>
+		<li><b>identifier.value</b> = <b>item.identifier.value</b>.</li>
+
+	</ul>
+	</li>
+	
+	<li>Click the radio button (circle) next to: <em>emit all results</em>.
+
+		
+</ol>
+
+<h2>STEP 5: Mapping to an RSS and Connect</h2>
+
+<p>This makes it so that you can click on the name of any of the books that the
+pipe displays and go to that Google Books page.<p>
+
+<ol>
+	li>Find <b>Operators</b> on the left-hand toolbar. Click on it.</li>
+	<li>Click, drag and drop <i>Create RSS</i> onto the blue canvas.</li>
+	
+	<li>Fill in the fields as follows:
+	<ul>
+		<li><i>Title:</i> <b>item.title</b>.</li>
+		<li><i>Link:</i> <b>item.url</b>.</li>
+		<li><i>Author:</i><b>item.contributor</b>.</li>
+		<li><i>GUID:</i><b>item.identifier.value</b>.</li>
+	</ul>
+	</li>
+	
+	<li>Finally connect all the modules as such:<br>
+		<img src="connect1.png" alt="search1" 
+		width="800" height="600"><br><br><br>
+
+		<img src="connect2.png" alt="search1" 
+		width="800" height="600"><br><br><br>
+		
+		<img src="connect3.png" alt="search1" 
+		width="800" height="600"></li><br><br><br>	
+
+</ol>
+
+
+<h2>STEP 6: Publishing your Pipe</h2>
+
+<p>Here is how to make your pipe visible for others to see.<p>
+
+<ol>
+	<li>Click the <i>Save</i> button in the top right corner under the search
+		 bar</li>
+	<li>Choose a name for your pipe (i.e. <b>Favorites Bookshelf</b>)</li>
+	<li>Now click on <i>Properties</i> next to the <i>Save</i> button.</li>
+	<li>Type in  Description and whatever tags you would like the pipelien 
+		to have. Click <i>OK</i>.</li>
+	<li>Click on <i>Properties</i> again, but this time click on the little
+		blue link above <i>OK</i> that says <i>Run Pipe...</i>.</li>
+	<li>You are now at a new page. Above your pipe are four buttons. Click 
+		the one that says <i>Publish</i>.</li>
+	<li>Click <i>OK</i> on the dialogue box. It is now published!</li>
+
+</ol>
+
+<p>Now you can test the pipe and see that is displays the right books and the 
+right number of these book, simply by running the pipe:<p><br>
+
+<img src="pipe2.png" alt="pipe2" 
+		width="800" height="600">
+
+<p>Also, if you click the <em>Get as RSS</em> button in 
+<em>Internet Explorer</em> you will have an RSS feed that you 
+can subcribe to for this pipe. As such:<p><br>
+
+<img src="rssFeed.png" alt="rssFeed" 
+		width="800" height="600">
+
+</body>
+</html>

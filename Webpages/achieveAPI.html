@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="assignment05.html"><em>Back to Assignment 05</em></a><br><br>
+<a href="index.html"><em>Back to homepage</em></a>
+
+<h1>Retrieving an NY Times Bestsellers List API</h1>
+
+<p>Here I will be showing you how to retrieve an API from NY Times so that you
+can use it in your <i>Yahoo Pipe</i> and get up-to-date information on the 
+bestsellers in the hard-cover fiction section of the NY Times.</p>
+
+<p><em>Go to the <a href="developer.nytimes.com">NY Times Developers</a> page.
+</em></p> 
+
+<ul>
+	<li>Click on the <b>Register</b> button in the top right hand corner.</li>
+	<li>Follow the steps and fill out the form to create an account in 
+		The New York Times.</li>
+	<li>Click on <b>Create my account</b>.</li>
+	<li>Now go to <a href="developer.nytimes.com/apps/register">NY 
+		Times Developers Application</a> page.</li>
+	<li>Fill out the registration form, remembering to click the check box
+		further down next to; <b>Issue a new key for Bestsellers API</b>.</li>
+	<li>Finally click the check bo next to; <b>I agree to the terms of service
+		</b>.</li>
+	<li>Click <b>Register Application</b>.</li>
+	<li>Now either copy and paste the key displayed into a wordDoc and save, or
+		simply keep the e-mail that was sent to you through the e-mail
+		address you provided.</li>
+</ul>
+
+<p>Now that you have your key, simply use the following URL template, substituting
+your key where it says: <b>{KEY}</b>. Also, change the colons to percent signs: 
+<b>%</b> inside the API key.</p>
+
+<h3>http://api.nytimes.com/svc/books/v2/lists.xml?api-key={KEY}
+&list=hardcover-fiction</h3>
+
+</body>
+</html>
